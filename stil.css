@@ -1,0 +1,313 @@
+/* Hjemmeside
+*/
+/*(BANNER) 
+*/
+
+.Banner {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;}
+
+/*bilde  index.html slider
+*/
+.mySlides  {
+  display:none;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+  border: 4px solid #100;}
+
+/*Bilde omoss.html 
+*/
+.About {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+  border: 4px solid #100;}
+
+/* kontakt.html bilde 
+*/
+.Lokal {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+  border: 4px solid #100;}
+
+.Konsoll {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+  border: 4px solid #100;}
+
+
+
+/*Overskrift og Avsnitt */
+.Heading1, .Avsnitt, h3, {
+  text-align: center;
+  font-family: Arial, sans-serif;}
+
+/*index.html, 
+kontakt.html, 
+omoss.html, 
+produkt.html
+*/
+footer{
+  text-align: center;}
+
+.Tabell {
+  border:1px solid black;}
+
+.Liste {
+  text-align: center;}
+
+/*
+kontakt.html // Liste
+*/
+
+div { 
+  text-align: center; }
+
+ul { 
+  display: inline-block; 
+  text-align: left  ; }
+
+/*
+Tabell produkter.html
+*/
+
+table, th, td {
+   text-align: center;
+  border: 1px solid black;
+   width: 30%;
+   margin-left: auto;
+  margin-right: auto;
+ }
+/*
+Skjema
+*/
+.skjema {
+  padding: 5px 10px;
+  margin-top: 1%;
+  width: 100%;
+ }
+
+fieldset {
+  background-color: #eeeeee;
+  border-color: black;
+  display: inline-grid;
+ }
+
+/*Feilmelding*/
+#validfeil {
+  text-align: center;
+  color: red;
+ }
+
+/*
+Responsiv
+*/
+img {
+  width: auto;
+  max-width: 100%;
+  height: auto;
+ }
+
+
+
+/* -----------Mobile------------ */
+@media screen and (max-width: 641px) {
+  .column {
+    width: 100%;
+ }
+
+/* gjemmer slide knappen til venstre*/
+.left {
+	display: none;
+ }
+
+/*gjemmer slide knappen til høyre*/
+.right {
+	display: none;
+ }
+
+header {
+	display: none;
+ }
+header.display-block {
+	display: block;
+ }
+
+.main-header {
+	position: fixed;
+	opacity: 1;
+	top: 0;
+	width: 66%;
+	height: 100%;
+	z-index: 999;
+	right: 0;
+	background: #272727;
+	flex-direction: column;
+	align-items: center;
+	font-size: 1.2rem;
+	transition: opacity 2s;
+ }
+
+a{
+	text-decoration: none;
+	text-transform: uppercase;
+    list-style-type: none;
+	
+ } 
+
+.nav-links {
+list-style-type: none;
+
+ }
+
+a:hover {
+	background-color: rgb(192, 192, 192, 0.6)
+ }
+
+.menu-icon {
+	cursor: pointer;
+    display: block;
+ }
+
+#hamburger-icon{
+	display: flex;
+	width: 30px;
+	float: right;
+	cursor: pointer;
+ }
+
+#exit-icon {
+	float: right;
+	padding: 10px;
+	cursor: pointer;
+ }
+
+.menu-btn {
+	display: block;
+ }
+
+.main-links {
+	line-height: 5rem;
+	padding: 0;
+	color: white;
+	font-family: sans-serif;
+	font-weight: bold;
+ } 
+}
+
+/*----- Tablet -----*/
+@media screen and (min-width: 641px) and (max-width: 1024px) {
+  .column {
+    width: 100%; 
+   }
+
+
+/* gjemmer slide knappen til venstre*/
+.left {
+	display: none;
+ }
+
+/*gjemmer slide knappen til høyre*/
+.right {
+	display: none;
+ }
+
+header {
+	display: none;
+ }
+
+header.display-block {
+	display: block;
+ }
+
+.main-header {
+	position: fixed;
+	opacity: 1;
+	top: 0;
+	width: 66%;
+	height: 100%;
+	z-index: 999;
+	right: 0;
+	background: #272727;
+	flex-direction: column;
+	align-items: center;
+	font-size: 1.2rem;
+	transition: opacity 2s;
+ }
+
+a{
+	text-decoration: none;
+	text-transform: uppercase;
+    list-style-type: none;
+ } 
+
+.nav-links {
+    list-style-type: none;
+ }
+
+a:hover {
+	background-color: rgb(192, 192, 192, 0.6)
+ }
+
+.menu-icon {
+	cursor: pointer;
+    display: block;
+ }
+
+#hamburger-icon{
+	display: flex;
+	width: 30px;
+	float: right;
+	cursor: pointer;
+ }
+
+#exit-icon {
+	float: right;
+	padding: 10px;
+	cursor: pointer;
+ }
+
+.menu-btn {
+	display: block;
+ }
+
+.main-links {
+	line-height: 5rem;
+	padding: 0;
+	color: white;
+	font-family: sans-serif;
+	font-weight: bold;
+ } 
+}
+
+/*--------- Desktop---------*/
+@media screen and (min-width: 1024px) {
+
+
+#hamburger-icon {
+	display: none;
+ }
+
+header {
+display: flex;
+justify-content: space-between;
+align-items: center;
+ }
+
+
+.nav-links {
+	list-style: none;
+	text-align: right;
+	display: inline-block;
+	padding: 10px 20px;
+	position: relative;
+ }
+}

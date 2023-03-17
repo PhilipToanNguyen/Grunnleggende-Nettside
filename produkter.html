@@ -1,0 +1,142 @@
+<!DOCTYPE html>   
+<html>
+<head>
+<title>Gamestop</title>
+<link rel="stylesheet" href="stil.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+       	 <img id ="hamburger-icon" src="icons8-menu.svg" alt="open navigation"> 
+     <header class="main-header">
+        <img id = "exit-icon" src="exit.svg" alt="exit navigation">
+       
+
+  <ul class="nav-links">
+          <li class ="nav-links">
+          <a class ="main-links" href="index.html">Hjem</a>
+          </li>
+          <li class ="nav-links">
+          <a class="main-links" href="produkter.html">Produkter og tjenester</a>
+          </li>
+          <li class ="nav-links">
+          <a class="main-links" href="omoss.html">Om oss</a>
+          </li>
+          <li class ="nav-links">
+          <a class="main-links" href="kontakt.html">Kontakt oss</a>
+          </li>
+          <li class ="nav-links">
+          <a class="main-links" href="skjema.html">Bli medlem</a>
+          </li>
+     </ul>
+</header>
+<img src="GamestopLogo.png" alt="Gamestop" class="Banner">
+
+<br>
+<img src="Spill.png" alt="Spill" class="Konsoll">
+<br>
+
+<div class="row">
+<div class ="column">  
+<h1 class="Heading1">Konsoll</h1>
+<p class="Avsnitt">
+Her på Gamestop selger vi mange ulike produkter. Spillkonsoll er et av de produktene som er veldig populært.<br> 
+Nye og brukte spillkonsoller er en mulighet å få tak i om du ønsker det. <br>
+De gamle/brukte konsollene er gode som nye og vi har fått <br>
+profosjonelle til å sjekke igjennom de før vi selger de! Her får dere muligheten til å få tak i de nyeste <br>
+konsollene og nyte alt av det nyeste. Eller så er det mulig å ta gå tilbake tid ved å gjenoppleve <br>
+de gode gamle spillene med konsollet du har blitt oppvokst med.
+</p>
+</div>
+<div class="column">
+<h1 class="Heading1">Spill</h1>
+<p class="Avsnitt">
+I dag er det mulig å spille mange spill i ulike plattformer. <br>
+Vi er opptatt av at dere kunder, skal få muligheten til å nyte spillet med deres egne preferanser.<br> 
+Ta kontakt med de ansatte om dere lurer på noe! Vi er tilgjengelig gjennom nett og fysisk ved åpningstider!
+</p>
+</div>
+
+<div class="column">
+<h1 class="Heading1">Bli Medlem!</h1>
+<p class="Avsnitt">
+Vi ønsker å tilby våre lokale kunder med ulike nivåer på medlemskap.<br>
+Jo høyere nivå, jo bedre tilbud får dere.<br>
+For å starte dette må du være medlem. <br>
+Finn en ansatt i våre lokale butikker <br>
+som kan hjelpe deg med dette. <br>
+Progresjonen av nivå økning, det er basert på hvor ofte<br>
+og hvor mye du kjøper produkter hos oss. <br>
+</p>
+
+<h3 class="Heading1">Oversikt over medlemskap</h3>
+<table>
+  <tr>
+    <th>Ingen medlemskap</th>
+    <th>Bronse          </th>
+    <th>Sølv            </th>
+    <th>Gull            </th>
+  </tr>
+  <tr>
+    <td>Ingen medlemskort</td>
+    <td>Få bronsekort!</td>
+    <td>Få sølvkort!</td>
+    <td>Få gullkort!</td>
+  </tr>
+  <tr>
+    <td>Ingen rabatt</td>
+    <td>1,5% rabatt</td>
+    <td>3% rabatt</td>
+    <td>5% rabatt</td>
+  </tr>
+  <tr>
+    <td>Ikke gratis forsikring</td>
+    <td>Ikke gratis forsikring</td>
+    <td>Gratis forsikring ved kjøp av spill</td>
+    <td>Gratis forsikring ved kjøp av spill</td>
+  </tr>
+  <tr>
+    <td>Ingen spesielle tilbud.</td>
+    <td>Ingen spesielle tilbud.</td>
+    <td>Ingen spesielle tilbud.</td>
+    <td>Eksluksive tilbud for Gullmedlemmer!</td>
+  </tr>
+</table>
+</div>
+<div class="column">
+ <h1 class="Heading1">Tjenester</h1>
+   <p class="Avsnitt">
+   Ved kjøp av produkter er det kanskje lurt med en Back-Up.<br>
+   For dere som er ofte uheldige har dere muligheten til å skaffe <br>
+   dere forsikring ved kjøp av spill, spillkonsoll og utstyr. <br>
+   Skulle du være uheldig vil det være svært rimelig å ha forsikring <br>
+   når du først er i den sure situasjonen. <br>
+  </p>
+ </div>
+</div>
+
+ <footer>
+     <a href="omoss.html">Om oss</a>|
+     <a href="kontakt.html">Kundeservice</a>
+                           
+<p> @1999-2021 GameStop 
+<br>30.09.2021
+</p>
+ </footer>
+
+
+<script>
+  const hamburgerBtn = document.getElementById('hamburger-icon');
+  const header = document.querySelector('header');
+  const exitBtn = document.getElementById('exit-icon');
+
+    hamburgerBtn.addEventListener('click', () => {
+	header.classList.add('display-block');
+})
+
+    exitBtn.addEventListener('click', () => {
+	header.classList.remove('display-block');
+})
+</script>
+</body>
+</html> 

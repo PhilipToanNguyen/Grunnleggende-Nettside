@@ -1,0 +1,93 @@
+<!DOCTYPE html><html>
+<head>
+<title>Gamestop</title>
+<link rel="stylesheet" href="stil.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<img id ="hamburger-icon" src="icons8-menu.svg" alt="open navigation"> 
+<header class="main-header">
+<img id = "exit-icon" src="exit.svg" alt="exit navigation">
+       
+ <ul class="nav-links">
+          <li class ="nav-links">
+          <a class ="main-links" href="index.html">Hjem</a>
+          </li>
+          <li class ="nav-links">
+          <a class="main-links" href="produkter.html">Produkter og tjenester</a>
+          </li>
+          <li class ="nav-links">
+          <a class="main-links" href="omoss.html">Om oss</a>
+          </li>
+          <li class ="nav-links">
+          <a class="main-links" href="kontakt.html">Kontakt oss</a>
+          </li>
+          <li class ="nav-links">
+          <a class="main-links" href="skjema.html">Bli medlem</a>
+          </li>
+     </ul>
+</header>
+<img src="GamestopLogo.png" alt="Gamestop" class="Banner">
+
+<main>
+ <form id="valid" onsubmit="return valid()">
+  <div class ="skjema">
+   <fieldset>
+    <legend>Bli medlem hos oss:</legend>
+        <label for="fname">Fornavn:</label>
+        <input type="text" id="fname" name="fname"><br><br>
+        <label for="lname">Etternavn:</label>
+        <input type="text" id="lname" name="lname"><br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="text" name="email"><br><br>
+        <label for="phonenumber">Telefon:</label>
+        <input type="tel" id="phone" name="phone" placeholder="+47 XXX XX XXX" pattern="[0-9]{3}[0-9]{2}[0-9]{3}" maxlength="8" /> <br><br>
+        <label for="adress">Adresse:</label>
+        <input type="adress" id="adresse" name="adresse"><br><br>
+        <label for="adr">Postnummer</label>
+        <input type="number" id="postnr" name="postnr" maxlength="4"><br><br>
+        <label for="country">Land</label>
+          <select id="country">
+                 <option value="Norway">Norge</option>
+                 <option value="Sweden">Sverige</option>
+                 <option value="Denmark">Danmark</option>
+                 <option value="Finland">Finland</option>
+          </select>
+   </fieldset>
+<br>
+
+<button type="submit">Registrer</button>
+</form>
+<input type="reset" value="Reset">
+  </div> 
+ </form>
+ <p id="validfeil"></p>       
+</main>
+ <footer>
+     <a href="omoss.html">Om oss</a>|
+     <a href="kontakt.html">Kundeservice</a>
+                           
+<p> @1999-2021 GameStop 
+<br>30.09.2021
+</p>
+ </footer>
+<script>
+  const hamburgerBtn = document.getElementById('hamburger-icon');
+  const header = document.querySelector('header');
+  const exitBtn = document.getElementById('exit-icon');
+
+    hamburgerBtn.addEventListener('click', () => {
+	header.classList.add('display-block');
+})
+
+    exitBtn.addEventListener('click', () => {
+	header.classList.remove('display-block');
+})
+
+</script>
+
+<script src="javascript.js"> </script>
+</body>
+</html> 

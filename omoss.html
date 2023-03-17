@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Gamestop</title>
+<link rel="stylesheet" href="stil.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+        <img id ="hamburger-icon" src="icons8-menu.svg" alt="open navigation"> 
+     <header class="main-header">
+        <img id = "exit-icon" src="exit.svg" alt="exit navigation">
+       
+
+  <ul class="nav-links">
+          <li class ="nav-links">
+          <a class ="main-links" href="index.html">Hjem</a>
+          </li>
+          <li class ="nav-links">
+          <a class="main-links" href="produkter.html">Produkter og tjenester</a>
+          </li>
+          <li class ="nav-links">
+          <a class="main-links" href="omoss.html">Om oss</a>
+          </li>
+          <li class ="nav-links">
+          <a class="main-links" href="kontakt.html">Kontakt oss</a>
+          </li>
+          <li class ="nav-links">
+          <a class="main-links" href="skjema.html">Bli medlem</a>
+          </li>
+     </ul>
+
+    
+    </header>
+
+        <img src="GamestopLogo.png" alt="Gamestop" width="800" height="300" class="Banner">
+        
+    
+
+        <br>
+        <img src="aboutus.png" alt="Annonse" width="400" height="800" class="About">
+        <br>
+        <div class="row">
+                <div class="column">
+                <h1 class = "Heading1">   Hvem er vi?</h1>
+                        <p class = "Avsnitt">
+                        Gamestop er en bedrift som spesialiserer seg innenfor videospill, <br>
+                        elektronik og gaming merchandice. Hovedkvarteret befinner <br>
+                        seg i Grapevine, Texas og er et av de største videospill <br>
+                        butikkene verden rundt. Vi har en stor interesse for videospill, <br>
+                        og vil derfor streve for at kundene blir fornøyde med spill-produktene våre.
+                        </p>
+          </div>
+          <div class="column">
+                <h1 class = "Heading1">Hva er målet vårt?</h1>
+                        <p class = "Avsnitt">
+                        Målet vårt er å selge videospill og videospill tilbehør.    <br>
+                        Vi har lyst til å dele spillverden med så mange som mulig,  <br> 
+                        slik at andre kan oppleve det fantastiske som ligger        <br>
+                        i det å spille videospill.            
+                        </p>
+          </div>
+          <div class="column">
+                <h1 class = "Heading1"> Hva er vår visjon?                 </h1>
+                <p class = "Avsnitt">
+                   Sammen, har vi en brennende lidenskap for gaming,        <br>
+                         vi har en forpliktelse for vår industri,           <br>
+                         og vi har en disiplinert business perspektiv       <br>
+                        for å kontinuerlig skape verdi for                  <br>
+                         våre aksjonærer, leverandører, kunder og ansatte.   
+                </p>
+          </div>
+        </div>
+
+
+
+
+  <footer>
+     <a href="omoss.html">Om oss</a>|
+     <a href="kontakt.html">Kundeservice</a>
+                           
+<p> @1999-2021 GameStop 
+<br>30.09.2021
+</p>
+ </footer>
+<script>
+  const hamburgerBtn = document.getElementById('hamburger-icon');
+  const header = document.querySelector('header');
+  const exitBtn = document.getElementById('exit-icon');
+
+    hamburgerBtn.addEventListener('click', () => {
+	header.classList.add('display-block');
+})
+
+    exitBtn.addEventListener('click', () => {
+	header.classList.remove('display-block');
+})
+</script>
+</body>
+</html> 
+
+
+

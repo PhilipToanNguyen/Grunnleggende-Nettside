@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Gamestop</title>
+<link rel="stylesheet" href="stil.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>     
+<body>
+	    
+     <img id ="hamburger-icon" src="icons8-menu.svg" alt="open navigation"> 
+     <header class="main-header">
+     <img id = "exit-icon" src="exit.svg" alt="exit navigation">
+       
+     <ul class="nav-links">
+          <li class ="nav-links">
+          <a class ="main-links" href="index.html">Hjem</a>
+          </li>
+          <li class ="nav-links">
+          <a class="main-links" href="produkter.html">Produkter og tjenester</a>
+          </li>
+          <li class ="nav-links">
+          <a class="main-links" href="omoss.html">Om oss</a>
+          </li>
+          <li class ="nav-links">
+          <a class="main-links" href="kontakt.html">Kontakt oss</a>
+          </li>
+          <li class ="nav-links">
+          <a class="main-links" href="skjema.html">Bli medlem</a>
+          </li>
+     </ul>
+
+     </header>
+     <img src="GamestopLogo.png" alt="Gamestop" width="800" height="300" class="Banner">
+
+<div class="Slides">
+<br>
+<img class="mySlides" src="Konsol.png">
+<img class="mySlides" src="Konsol2.png">
+<img class="mySlides" src="Konsol3.png">
+<img class="mySlides" src="Konsol4.png">
+
+<br>
+<button class="left" onclick="plusDivs(-1)">&#10094;</button>
+<button class="right" onclick="plusDivs(+1)">&#10095;</button>
+</div>  
+
+<script>
+  const hamburgerBtn = document.getElementById('hamburger-icon');
+  const header = document.querySelector('header');
+  const exitBtn = document.getElementById('exit-icon');
+
+    hamburgerBtn.addEventListener('click', () => {
+	header.classList.add('display-block');
+})
+
+    exitBtn.addEventListener('click', () => {
+	header.classList.remove('display-block');
+})
+    
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+</main>
+ <footer>
+     <a href="omoss.html">Om oss</a>|
+     <a href="kontakt.html">Kundeservice</a>
+                           
+<p> @1999-2021 GameStop 
+<br>30.09.2021
+</p>
+ </footer>
+</body>
+</html> 
+
+
